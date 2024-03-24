@@ -19,6 +19,8 @@ export interface EditorControlsProps {
   setReadOnly: (value: boolean) => void;
   theme: keyof Themes;
   setTheme: (value: keyof Themes) => void;
+  wordWrap: boolean
+  setWordWrap: (value: boolean) => void;
   zoom: (delta: number) => void;
 }
 
@@ -31,6 +33,8 @@ export default function EditorControls({
   setReadOnly,
   theme,
   setTheme,
+  wordWrap,
+  setWordWrap,
   zoom,
 }: EditorControlsProps) {
   const [saving, setSaving] = useState<boolean>(false);
