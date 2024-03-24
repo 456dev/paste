@@ -117,6 +117,7 @@ export default function EditorControls({
       <Section>
         <Button onClick={() => zoom(1)}>[+ </Button>
         <Button onClick={() => zoom(-1)}> -]</Button>
+        <Button onClick={() => setWordWrap(!wordWrap)}>[<span className='optional'>wrap:</span>{wordWrap ? "on" : "off"}]</Button>
         <MenuButton
           label="theme"
           value={theme}
