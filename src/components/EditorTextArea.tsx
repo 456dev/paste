@@ -131,7 +131,7 @@ export default function EditorTextArea({
           fontFamily: 'JetBrains Mono',
           fontSize: fontSize,
           fontLigatures: true,
-          wordWrap: 'on',
+          wordWrap: wordWrap ? "on" : "off",
           renderLineHighlight: 'none',
           renderValidationDecorations: 'off',
           readOnly,
